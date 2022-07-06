@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ktx.controllers.HomeController">
+   <children>
+      <Button layoutY="-1.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #00da2f;" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="534.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="166.0" text="Button" />
+      <Button layoutX="352.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToMemberManaging" prefHeight="31.0" prefWidth="182.0" text="STUDENTS" />
+      <Button layoutX="176.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToRoomManaging" prefHeight="31.0" prefWidth="176.0" text="ROOMS" />
+      <ImageView fitHeight="408.0" fitWidth="284.0" layoutX="398.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://images.unsplash.com/photo-1593279340482-125068f0ca45?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=688&amp;q=80" />
+         </image>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="51.0" text="welcome to" textFill="#868686">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="83.0" text="KY TUC XA LAU XANH" textFill="#2db500">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Text fill="#030303" fontSmoothingType="LCD" layoutX="28.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book" wrappingWidth="330.103515625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label layoutX="29.0" layoutY="289.0" text="Specifications" textFill="#868686">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="323.0" text="number of room:" textFill="#1b43a1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberOfRoom" layoutX="150.0" layoutY="324.0" text="100" textFill="#1b43a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="348.0" text="capacity:" textFill="#1b43a1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="capacity" layoutX="93.0" layoutY="349.0" text="700" textFill="#1b43a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="203.0" layoutX="130.0" layoutY="280.0" startX="-100.0" strokeWidth="0.5" />
+      <Label layoutX="31.0" layoutY="374.0" text="total current member:" textFill="#1b43a1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalCurrentMember" layoutX="182.0" layoutY="375.0" text="500" textFill="#1b43a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="30.0" layoutY="446.0" mnemonicParsing="false" text="edit info" />
+   </children>
+</AnchorPane>

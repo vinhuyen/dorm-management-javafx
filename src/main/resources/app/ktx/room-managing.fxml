@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ktx.controllers.RoomManagingController">
+    <children>
+        <Button layoutY="-1.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="176.0" text="HOME" />
+        <Button layoutX="534.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="166.0" text="Button" />
+        <Button layoutX="352.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToMemberManaging" prefHeight="31.0" prefWidth="182.0" text="STUDENTS" />
+        <Button layoutX="176.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToRoomManaging" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #00da2f;" text="ROOMS" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+      <ChoiceBox fx:id="sortByComboBox" layoutX="22.0" layoutY="82.0" prefHeight="26.0" prefWidth="68.0" />
+      <Label layoutX="23.0" layoutY="58.0" text="Sort by" />
+      <TableView fx:id="roomTable" layoutX="129.0" layoutY="56.0" prefHeight="434.0" prefWidth="551.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="132.0" text="id" />
+          <TableColumn fx:id="nameColumn" prefWidth="137.0" text="name" />
+            <TableColumn fx:id="capacityColumn" prefWidth="142.0" text="capacity" />
+            <TableColumn fx:id="memberAmountColumn" prefWidth="142.0" text="amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="21.0" layoutY="462.0" mnemonicParsing="false" text="Add student" />
+      <Button layoutX="21.0" layoutY="425.0" mnemonicParsing="false" onAction="#switchToRoomForm" text="Add room" />
+      <Button layoutX="21.0" layoutY="384.0" mnemonicParsing="false" text="Edit" />
+    </children>
+</AnchorPane>

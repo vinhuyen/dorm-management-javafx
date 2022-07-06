@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ktx.controllers.MemberManagingController">
+    <children>
+        <Button layoutY="-1.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="176.0" text="HOME" />
+        <Button layoutX="534.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="166.0" text="Button" />
+        <Button layoutX="352.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToMemberManaging" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #00da2f;" text="STUDENTS" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+        <Button layoutX="176.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToRoomManaging" prefHeight="31.0" prefWidth="176.0" text="ROOMS" />
+
+      <TableView fx:id="memberTable" layoutX="112.0" layoutY="55.0" prefHeight="419.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="102.0" text="id" />
+          <TableColumn fx:id="fullNameColumn" prefWidth="178.0" text="name" />
+            <TableColumn fx:id="roomNameColumn" prefWidth="128.0" text="room" />
+            <TableColumn fx:id="joinedAtColumn" prefWidth="149.0" text="joined date" />
+        </columns>
+      </TableView>
+      <Button layoutX="17.0" layoutY="449.0" mnemonicParsing="false" onAction="#switchToMemberForm" text="add student" />
+      <Button fx:id="removeButton" layoutX="17.0" layoutY="414.0" mnemonicParsing="false" onAction="#deleteMemberFromTable" text="remove" />
+      <Button layoutX="18.0" layoutY="342.0" mnemonicParsing="false" onAction="#onEditMember" text="edit" />
+      <Label layoutX="14.0" layoutY="55.0" text="sort by">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="sortByComboBox" layoutX="13.0" layoutY="75.0" onAction="#onComboBoxSelection" prefHeight="25.0" prefWidth="80.0" />
+      <Button layoutX="18.0" layoutY="378.0" mnemonicParsing="false" text="detail" />
+    </children>
+</AnchorPane>

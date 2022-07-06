@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ktx.controllers.RoomFormController">
+   <children>
+      <Label layoutX="147.0" layoutY="132.0" text="Room name" />
+      <Label layoutX="147.0" layoutY="183.0" text="Capacity" />
+      <TextField layoutX="274.0" layoutY="127.0" />
+      <TextField layoutX="274.0" layoutY="176.0" />
+      <Button layoutX="147.0" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" onAction="#switchToRoomManaging" text="CANCEL" />
+      <Button layoutX="296.0" layoutY="254.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="140.0" text="SUBMIT" />
+   </children>
+</AnchorPane>
